@@ -6,8 +6,8 @@
 
 
 body {
-    background: url(./vibrant-colorful-aurora-borealis-background-great-wallpaper.jpg) center;
-    height: 100vh;
+    background: url(./vibrant-colorful-aurora-borealis-background-great-wallpaper.jpg) top center/cover no-repeat;
+    height: 100vh; /*viewport na tela, para responsividade*/
 }   
 
 body * {
@@ -18,11 +18,10 @@ body * {
 .container { /* aplico todas as configs gerais do container, com classe*/
     display: flex;
     flex-direction: column;
-    gap: 32px;
-    width: 100%;
-    max-width: 400px;
+    gap: 20px;
+    width: 100%; /*Ajuda ajustar na tela*/ 
+    max-width: 350px;
     margin: 56px auto; 
-    padding: 0 24px;
 }
 
 .profile {
@@ -36,14 +35,12 @@ ul {
 
 .box-links{
     list-style: none;
-    font-size: large;
     text-decoration: none;
     display: flex;
     justify-content: center;
     border: 1px solid;
     border-radius: 15px;
     padding: 24px 16px;
-    transition: background 0.5s;
 }
 
 .box-links:hover {
@@ -51,14 +48,14 @@ ul {
     color: rgb(200, 255, 0);
     background-color: rgba(112, 182, 182, 0.521);
     transform: scale(1.02);
+    transition: background 0.2s;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 12px;
     font-size: 20px;
-    transition: background 0.5s;
     border-radius: 50%;
     padding-top: 20px;  
 }
@@ -71,4 +68,5 @@ ul {
     transform: scale(1.2);
     background:rgba(112, 182, 182, 0.521);
     border-radius: 50%;
+    transition: background 0.2s;
 }
