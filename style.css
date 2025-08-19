@@ -7,7 +7,7 @@
 
 body {
     background: url(./vibrant-colorful-aurora-borealis-background-great-wallpaper.jpg) top center/cover no-repeat;
-    height: 100vh; /*viewport na tela, para responsividade*/
+    height: 100dvh; /*viewport na tela, para responsividade*/
 }   
 
 body * {
