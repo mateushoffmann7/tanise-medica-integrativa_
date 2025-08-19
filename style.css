@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: url(./vibrant-colorful-aurora-borealis-background-great-wallpaper.jpg) center;
+    height: 100vh;
+}   
+
+body * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 255, 213);
+}
+
+.container { /* aplico todas as configs gerais do container, com classe*/
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    max-width: 400px;
+    margin: 56px auto; 
+    padding: 0 24px;
+}
+
+.profile {
+    text-align: center;
+    padding: 100px 0 16px 0;
+}
+
+ul {
+    list-style: none; /*Fiz separado porque pra tirar style da lista tem que ser separado do "a" que vou tirar o decoration */
+}
+
+.box-links{
+    list-style: none;
+    font-size: large;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 24px 16px;
+    transition: background 0.5s;
+}
+
+.box-links:hover {
+    border: 1.5px solid rgb(200, 255, 0);
+    color: rgb(200, 255, 0);
+    background-color: rgba(112, 182, 182, 0.521);
+    transform: scale(1.02);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    font-size: 20px;
+    transition: background 0.5s;
+    border-radius: 50%;
+    padding-top: 20px;  
+}
+
+.social-links a { /*Feito para ajustar o circulo atras dos social links*/
+    padding: 10px;
+}
+
+.social-links a:hover { /*Hover separado em cada social link*/
+    transform: scale(1.2);
+    background:rgba(112, 182, 182, 0.521);
+    border-radius: 50%;
+}
