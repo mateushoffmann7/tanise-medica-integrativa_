@@ -18,10 +18,9 @@ body * {
 .container { /* aplico todas as configs gerais do container, com classe*/
     display: flex;
     flex-direction: column;
-    gap: 20px;
     width: 100%; /*Ajuda ajustar na tela*/ 
     max-width: 350px;
-    margin: 56px auto; 
+    margin: 56px auto;
 }
 
 .profile {
@@ -29,21 +28,26 @@ body * {
     padding: 100px 0 16px 0;
 }
 
-ul {
+.box-links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
     list-style: none; /*Fiz separado porque pra tirar style da lista tem que ser separado do "a" que vou tirar o decoration */
+    padding: 14px 0 0 0;
 }
 
-.box-links{
+
+.link {
     list-style: none;
     text-decoration: none;
-    display: flex;
-    justify-content: center;
+    display: block;
+    text-align: center;
     border: 1px solid;
     border-radius: 15px;
-    padding: 24px 16px;
+    padding: 16px 16px;
 }
 
-.box-links:hover {
+.link:hover {
     border: 1.5px solid rgb(200, 255, 0);
     color: rgb(200, 255, 0);
     background-color: rgba(112, 182, 182, 0.521);
