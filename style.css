@@ -8,7 +8,7 @@
 :root {
     --bg-url: url(./vibrant-colorful-aurora-borealis-background-great-wallpaper.jpg) top center/cover no-repeat;
     --text-color:rgb(0, 255, 213);
-    --shadow: 1px 1px 5px rgb(255, 255, 255);
+    --shadow: 1px 1px 10px rgb(105, 68, 238);
     --highlight: rgba(94, 107, 48, 0.493);
     --highlight-text-border: rgb(200, 255, 0);
     --highlight-social: rgba(94, 107, 48, 0.493);
@@ -19,7 +19,7 @@
 .black {
     --bg-url: url(./thumb-1920-1202142.jpg) top center/cover no-repeat;
     --text-color:rgb(255, 255, 255);
-    --shadow: 1px 1px 5px black;
+    --shadow: 1px 1px 10px black;
     --highlight: rgba(128, 169, 211, 0.5);
     --highlight-text-border: rgb(3, 3, 3);
     --highlight-social: rgba(128, 169, 211, 0.5);
@@ -56,7 +56,7 @@ body * {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 100px 0 16px 0;
+    padding: 10px 0 16px 0;
     color: var(--text-color);
     text-shadow: var(--shadow);
 }
