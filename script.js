@@ -4,9 +4,9 @@ html.classList.toggle("black")
 
 const img= document.querySelector(".prof") //acessar imagem do perfil e trocar
     if(html.classList.contains("black")) {
-    img.setAttribute("src", "./avatarblack.png")
+    img.setAttribute("src", "./assets/avatarblack.png")
     } else {
-    img.setAttribute("src", "./avatar.png")
+    img.setAttribute("src", "./assets/avatar.png")
     }
 const but= document.querySelector(".but") //acessar icone e trocar atributo
     if(html.classList.contains("black")) {
