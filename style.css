@@ -5,15 +5,38 @@
 }
 
 
+:root {
+    --bg-url: url(./vibrant-colorful-aurora-borealis-background-great-wallpaper.jpg) top center/cover no-repeat;
+    --text-color:rgb(0, 255, 213);
+    --shadow: 1px 1px 5px rgb(255, 255, 255);
+    --highlight: rgba(94, 107, 48, 0.493);
+    --highlight-text-border: rgb(200, 255, 0);
+    --highlight-social: rgba(94, 107, 48, 0.493);
+    --bg-hover: rgba(76, 206, 206, 0.452);
+    --bg-button:  rgba(76, 206, 206, 0.267);
+}
+
+.black {
+    --bg-url: url(./thumb-1920-1202142.jpg) top center/cover no-repeat;
+    --text-color:rgb(255, 255, 255);
+    --shadow: 1px 1px 5px black;
+    --highlight: rgba(128, 169, 211, 0.5);
+    --highlight-text-border: rgb(3, 3, 3);
+    --highlight-social: rgba(128, 169, 211, 0.5);
+    --bg-hover: rgba(0, 76, 241, 0.486);
+    --bg-button:  rgba(76, 206, 206, 0.267);
+}
+
+
 body {
-    background: url(./vibrant-colorful-aurora-borealis-background-great-wallpaper.jpg) top center/cover no-repeat;
+    background: var(--bg-url);
     height: 100dvh; /*viewport na tela, para responsividade*/
 }   
 
 body * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(0, 255, 213);
 }
+
 
 .container { /* aplico todas as configs gerais do container, com classe*/
     display: flex;
@@ -23,9 +46,33 @@ body * {
     margin: 56px auto;
 }
 
+.prof {
+    height: 120px;
+    width: 120px;
+}
+
 .profile {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     padding: 100px 0 16px 0;
+    color: var(--text-color);
+    text-shadow: var(--shadow);
+}
+
+.profile button {
+    border-radius: 9999px;
+    padding: 8px 10px;  
+    margin: 10px 0 5px 0; 
+    background: var(--bg-button);
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+}
+
+button:hover {
+    transform: scale(1.10);
+    background-color: var(--highlight);
 }
 
 .box-links {
@@ -34,6 +81,7 @@ body * {
     gap: 14px;
     list-style: none; /*Fiz separado porque pra tirar style da lista tem que ser separado do "a" que vou tirar o decoration */
     padding: 14px 0 0 0;
+    color: var(--text-color);
 }
 
 
@@ -45,12 +93,14 @@ body * {
     border: 1px solid;
     border-radius: 15px;
     padding: 16px 16px;
+    background-color: var(--bg-hover);
+    color: var(--text-color);
 }
 
 .link:hover {
-    border: 1.5px solid rgb(200, 255, 0);
-    color: rgb(200, 255, 0);
-    background-color: rgba(112, 182, 182, 0.521);
+    border: 1.5px solid var(--highlight-text-border);
+    color: var(--highlight-text-border);
+    background-color: var(--highlight);
     transform: scale(1.02);
     transition: background 0.2s;
 }
@@ -60,17 +110,17 @@ body * {
     justify-content: center;
     gap: 12px;
     font-size: 20px;
-    border-radius: 50%;
-    padding-top: 20px;  
+    padding: 20px;
 }
 
 .social-links a { /*Feito para ajustar o circulo atras dos social links*/
-    padding: 10px;
+    padding: 10px 15px;
+    border-radius: 999999px;
+    color: var(--text-color);
 }
 
 .social-links a:hover { /*Hover separado em cada social link*/
     transform: scale(1.2);
-    background:rgba(112, 182, 182, 0.521);
-    border-radius: 50%;
-    transition: background 0.2s;
+    background:var(--highlight-social);
+    transition: background 0.1s;
 }
