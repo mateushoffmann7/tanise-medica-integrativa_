@@ -129,10 +129,12 @@ p {
     background-color: var(--highlight);
     transform: scale(1.02);
     transition: background 0.2s;
+    border-radius: 100%;
 }
     .social-links a:hover { /*Hover separado em cada social link*/
     transform: scale(1.2);
     background:var(--highlight-social);
     transition: background 0.1s;
+    border-radius: 100%;
 }
 }
