@@ -104,6 +104,11 @@ p {
 
 .link:hover {
     transform: scale(1.02);
+    border: 1.5px solid var(--highlight-text-border);
+    color: var(--highlight-text-border);
+    background-color: var(--highlight);
+    transform: scale(1.02);
+    transition: background 0.2s;
 }
 
 .social-links {
@@ -121,18 +126,7 @@ p {
 
 .social-links a:hover { /*Hover separado em cada social link*/
     transform: scale(1.2);
-}
-@media (min-width: 600px) {
-    .link:hover {
-    border: 1.5px solid var(--highlight-text-border);
-    color: var(--highlight-text-border);
-    background-color: var(--highlight);
-    transform: scale(1.02);
-    transition: background 0.2s;
-}
-    .social-links a:hover { /*Hover separado em cada social link*/
     transform: scale(1.2);
     background:var(--highlight-social);
     transition: background 0.1s;
-}
 }
