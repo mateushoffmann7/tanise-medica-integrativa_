@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-    <img src="./Banner.png"/>
+    <img src="./assets/Banner.png"/>
 </p>
 
 ## 🚀 Tecnologias
