@@ -67,6 +67,7 @@ body * {
     background: var(--bg-button);
     border: 1px solid var(--text-color);
     color: var(--text-color);
+    font-size: 12px;
 }
 
 button:hover {
@@ -74,13 +75,18 @@ button:hover {
     background-color: var(--highlight);
 }
 
+p {
+    font-size: 12px;
+}
+
 .box-links {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 16px;
     list-style: none; /*Fiz separado porque pra tirar style da lista tem que ser separado do "a" que vou tirar o decoration */
-    padding: 14px 0 0 0;
+    padding: 15px;
     color: var(--text-color);
+    font-size: 12px;
 }
 
 
@@ -91,7 +97,7 @@ button:hover {
     text-align: center;
     border: 1px solid;
     border-radius: 15px;
-    padding: 16px 16px;
+    padding: 12px 1px;
     background-color: var(--bg-hover);
     color: var(--text-color);
 }
@@ -107,13 +113,12 @@ button:hover {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 12px;
-    font-size: 20px;
-    padding: 20px;
+    gap: 16px;
+    font-size: 15px;
 }
 
 .social-links a { /*Feito para ajustar o circulo atras dos social links*/
-    padding: 10px 15px;
+    padding: 8px 10px;
     border-radius: 999999px;
     color: var(--text-color);
 }
