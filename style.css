@@ -130,3 +130,7 @@ p {
     background:var(--highlight-social);
     transition: background 0.1s;
 }
+
+a {
+    all: unset;
+}
