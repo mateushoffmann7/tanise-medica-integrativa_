@@ -86,7 +86,7 @@ p {
     list-style: none; /*Fiz separado porque pra tirar style da lista tem que ser separado do "a" que vou tirar o decoration */
     padding: 15px;
     color: var(--text-color);
-    font-size: 12px;
+    font-size: 14px;
 }
 
 
