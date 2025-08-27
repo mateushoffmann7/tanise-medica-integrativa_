@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent; /*destaque do texto nativo quando navegador reconhece inputs ou botões*/
 }
 
 
@@ -31,7 +31,7 @@
 
 body {
     background: var(--bg-url);
-    height: 100dvh; /*viewport na tela, para responsividade*/
+    height: 100dvh; /*100% display view height na tela, para responsividade*/
 }   
 
 body * {
