@@ -123,6 +123,7 @@ p {
   padding: 8px 10px;
   border-radius: 999999px;
   color: var(--text-color);
+  background-color: var(--bg-hover);
 }
 
 .social-links a:hover {
